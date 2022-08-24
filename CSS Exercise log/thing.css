@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(231, 230, 230);
+
+}
+#nav{
+    margin-left: 150px;
+    
+}
+#nav>a{
+    margin-left: 40px;
+    color: rgb(31, 163, 224);
+    text-decoration: none;
+}
+#nav>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.blue{
+    width: 180px;
+    padding: 8px 0px 8px 15px;
+    color: white;
+    background-color: rgb(13, 13, 109);
+    margin-top: 20px;
+    font-size: 15px;
+}
+.bar{
+    width: 180px;
+    color:rgb(74, 173, 230);
+    background-color:rgb(240, 240, 240);
+    margin-top: 2px;
+    padding: 8px 0px 8px 15px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.bar:hover{
+    color: black;
+    background-color: rgb(219, 217, 217);
+}
+#main{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+#content{
+    margin-top: 50px;
+}
+#content>p{
+    font-size: 30px;
+    color: rgb(114, 109, 109);
+}
+#content>div{
+    font-size: 13px;
+}
+#ncreate{
+    padding: 8px 20px;
+    border: 2px solid green;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* ...........................table..................................... */
+
+#new{
+    height: auto;
+    width: 440px;
+    margin-top: 30px;
+    padding: 20px 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: rgba(237, 238, 238, 0.342);
+    border-radius: 20px;
+}
+tr{
+    color: rgb(51, 143, 230);
+    background-color: rgb(230, 223, 223);
+}
+tr:hover{
+    text-decoration: underline;
+    background-color: rgb(196, 237, 243);
+}
+#nheading{
+    padding: 10px 40px;
+    margin-bottom: 0px;
+    color: white;
+    background-color: rgb(13, 13, 109);
+    border: 0px;
+   border-radius: 10px;
+   font-size: 20px;
+   
+}
+.nImgcolumn{
+    width: 30px;
+    height: 40px;
+}
+.nImgcolumn>img{
+    height: 100%;
+    width: 50px;
+}
+.ncolumn{
+    width: 250px;
+    padding: 10px;
+    font-size: 15px;
+}
+
