@@ -102,12 +102,13 @@ tr:hover{
    
 }
 .nImgcolumn{
-    width: 30px;
-    height: 40px;
+    width: 40px;
+    height: 45px;
 }
 .nImgcolumn>img{
-    height: 100%;
-    width: 50px;
+    height: 35px;
+    width: 30px;
+    padding: 7px 0px 0px 7px;
 }
 .ncolumn{
     width: 250px;

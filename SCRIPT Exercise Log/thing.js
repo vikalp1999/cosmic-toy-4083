@@ -1,6 +1,6 @@
 let url1 = "https://cdn.pixabay.com/photo/2012/04/26/12/44/skiing-42369__340.png"
 let url2 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjXDov2jjbxqTa7eW0h8L8oNlmH5pv4QFBDsVcgIPMa0Z5SbpXz_kSBwcg5ySn-_9RyCY&usqp=CAU"
-let url3 =  "https://png.pngtree.com/png-clipart/20190520/original/pngtree-delete-vector-icon-png-image_4236653.jpg"
+let url3 =  "https://simg.nicepng.com/png/small/334-3348448_google-received-delete-icon-png-transparent.png"
 
 function ncardio(){
     document.querySelector("#nAdd").innerHTML = ""
