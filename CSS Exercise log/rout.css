@@ -26,7 +26,11 @@
 
 
 #nrMain{
+    height: auto;
+    width: 1000px;
+    margin: auto;
     display: flex;
+    gap: 30px;
 }
 img{
     height: 50px;
@@ -77,4 +81,17 @@ img{
 
 #nrMain2>p:nth-child(1){
     font-size: 35px;
+}
+#nrBtn{
+    margin-top: 50px;
+}
+#nrBtn>button{
+    padding: 8px 7px;
+    width: 200px;
+    font-size: 14px;
+    border: 2px solid rgb(95, 94, 94);
+    background-color: white;
+}
+#nrBtn>button:hover{
+    border: 2px solid black;
 }

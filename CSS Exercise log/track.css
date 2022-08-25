@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(231, 230, 230);
+}
+#nav{
+    margin-left: 150px;
+    
+}
+#nav>a{
+    margin-left: 40px;
+    color: rgb(31, 163, 224);
+    text-decoration: none;
+}
+#nav>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+#ntMain{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+#nt1{
+    width: 180px;
+    padding: 8px 0px 8px 15px;
+    color: white;
+    background-color: rgb(13, 13, 109);
+    margin-top: 20px;
+    font-size: 15px;
+}
+.nt2{
+    width: 180px;
+    color:rgb(74, 173, 230);
+    background-color:rgb(240, 240, 240);
+    margin-top: 2px;
+    padding: 8px 0px 8px 15px;
+    font-size: 15px;
+}
+.nt2:hover{
+    color: black;
+    background-color: rgb(204, 201, 201);
+}
+#ntMain2{
+    height: 500px;
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+#ntMain2>p:nth-child(1){
+    font-size: 35px;
+}
+
+img{
+    height: 400px;
+    width: 750px;
+    margin-top: 30px;
+    
+}
