@@ -65,9 +65,13 @@ class User{
         this.email=email,
         this.image=image,
         data.push(this);
+        if(username==""||email==""||image==""||password==""){
+          return 
+        }
         localStorage.setItem("shapeLinksignupData",JSON.stringify(data))
         alert("SUCESSFULL SIGN-UP")
     }
+   
 }
 let emailSignup=()=>{
     console.log("ok")
