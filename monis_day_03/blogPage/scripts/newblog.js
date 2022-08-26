@@ -1,11 +1,12 @@
 
 import {navbar} from "/cosmic-toy-4083/monis_day_03/blogPage/components/navbar.js"
-let nav=document.querySelector("nav")
-nav.innerHTML=navbar()
+let nav=document.querySelector("mnav")
+// nav.innerHTML=navbar()
 
+let btn=document.getElementById("save").addEventListener("click",savefun)
 function savefun(){
 
-
+console.log("yes")
 let subject=document.getElementById("subject").value
 let content=document.getElementById("content").value
 

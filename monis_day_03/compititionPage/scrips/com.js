@@ -1,7 +1,7 @@
 
 import {navbar} from "/cosmic-toy-4083/monis_day_03/blogPage/components/navbar.js"
-let nav=document.querySelector("nav")
-nav.innerHTML=navbar();
+let nav=document.querySelector("mnav")
+// nav.innerHTML=navbar();
 
 let creatnewcom=document.getElementById("compet").addEventListener("click",compet)
 function compet(){
@@ -54,6 +54,7 @@ c2.append(p1,p2,br,flag,p3)
     let c4=document.createElement("td")
     c4.innerText="X"
     c4.style.color="red"
+    c4.style.cursor="pointer"
     c4.addEventListener("click" ,function(){
         removfunc(ind)
     })
