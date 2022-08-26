@@ -7,13 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+   
+  </style>
   <body>
     <button id="ModalBtn" class="button">Click Here</button>
 
     <div id="simpleModal" class="modal">
       <div id="modal-content">
         <span class="closeBtn">&times;</span>
-        <p>Hello...I am a modal</p>
+        <p id="log1">LOGIN</p>
+        <div id="logDiv">
+          <input type="text" name="" id="loginUsername" class="loginInp" placeholder="username_or_email">
+          
+        <input type="password" name="" id="loginPassword" class="loginInp" placeholder="Password">
+       
+        <button id="loginBtn" onclick="login1()">Login</button>
+        </div>
+        <div id="LoginFc">Login with Facebook</div>
       </div>
     </div>
   </body>
@@ -34,3 +45,4 @@
     content.style.display = "none";
   }
 </script>
+<script src="login.js"></script>

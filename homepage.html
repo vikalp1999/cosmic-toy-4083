@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="./hp.css">
+    <link rel="stylesheet" href="login/style.css">
+    
 </head>
 <style src="./index.css"></style>
 <body>
     <div id="background">
+        <!-- start navbar-->
         <div id="snav" class="navbar">
             <div class="bar">
                 <img src="https://kcdn.twiikapp.com/images/logo.png">
@@ -16,10 +19,27 @@
             <div class="nav">
             <p><a href="">Get the app</a></p>
             <p><a href="">Contact</a></p>
-            <p><a href="">Login</a></p>
+            <p id="ModalBtn"><a>Login</a></p>
             <button><a href="">Create Account</a></button>
             </div>
         </div>
+        <!-- login pop up -->
+        <div id="simpleModal" class="modal">
+            <div id="modal-content">
+              <span class="closeBtn">&times;</span>
+              <p id="log1">LOGIN</p>
+              <div id="logDiv">
+                <input type="text" name="" id="loginUsername" class="loginInp" placeholder="username_or_email">
+                
+              <input type="password" name="" id="loginPassword" class="loginInp" placeholder="Password">
+             
+              <button id="loginBtn" onclick="login1()">Login</button>
+              </div>
+              <div id="LoginFc">Login with Facebook</div>
+            </div>
+          </div>
+          <!-- ...............navbar end ..............-->
+          <!-- log in pop end  -->
         <div class="banner">
            
             <h1>The personal coach in your pocket.
@@ -125,7 +145,7 @@
 
         </div>
     </div>
-
+     <!-- .............start footer.................... -->
     <div id="footer">
         <div id="footerR">
             <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
@@ -141,6 +161,24 @@
             <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
         </div>
     </div>
+    <!--................... end footer................. -->
 </body>
 </html>
 <script src="./hp.js"></script>
+<script src="login/login.js"></script>
+<script>
+    let content = document.querySelector("#simpleModal");
+    let openBtn = document.querySelector("#ModalBtn");
+    let closeBtn = document.querySelector(".closeBtn");
+  
+    openBtn.addEventListener("click", openModal);
+    closeBtn.addEventListener("click", closeModal);
+  
+    function openModal() {
+      console.log("clicked");
+      content.style.display = "block";
+    }
+    function closeModal() {
+      content.style.display = "none";
+    }
+  </script>
