@@ -5,9 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./CSS Exercise log/equip.css">
 </head>
 <body>
-    <h1>Welcome to my Equipment page</h1>
-    <img src="https://e7.pngegg.com/pngimages/60/588/png-clipart-oops-illustration-green-stunned-the-explosion-stickers-text-logo.png" alt="">
+    <div id="box">
+        <div id="nav">
+            <a href="calender.html">Show Calender</a>
+            <a href="thing.html">My Things</a>
+            <a href="rout.html">Routines</a>
+            <a href="track.html">Tracks</a>
+            <a href="equip.html">Equipment</a>
+            <a href="import.html">Import Training</a>
+        </div>
+    </div>
+
+    <div id="neContainer">
+        <div>Equipment</div>
+        <p>Below you will find our equipment database. You can add to this list by clicking "create new equipment".</p>
+        <div id="neCreate">
+            <p>Create new equipment</p>
+            <p>INFORMATION ABOUT THIS EQUIPMENT</p>
+            <h4>Category:</h4>
+            <select name="Cycle wear" id="">
+                <option value="Training Wear">Training Wear</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Sports gear">Sports gear</option>
+                <option value="Technical Equipment">Technical Equipment</option>
+                <option value="Others">Others</option>
+            </select>
+            <h4>Manufacturer:</h4>
+            <input type="text" placeholder="Enter Here">
+            <h4>Name / modell:</h4>
+            <input type="text" placeholder="Enter Here">
+            <p>PREFERENCES</p>
+            <input type="checkbox" id="neCheck">
+            <label for="neCheck">Add to my list of equipment</label><br>
+            <button>SAVE</button>
+            <button>CANCEL</button>
+        </div>
+
+        <div id="neUploadImage">
+            <h4>
+                Category:	
+                Cycle wear
+                Manufacturer:	
+                Name / modell:	
+                PREFERENCES
+                 Add to my list of equipment
+                Text- and photo-notation</h4>
+                <p>Add an image to this equipment.</p>
+                <div>There are no images attached to this product.</div>
+                <button>UOLOAD IMAGE</button>
+                <button>ADD IMAGE FROM MY LIBRARY</button>
+        </div>
+    </div>
+    
 </body>
 </html>
