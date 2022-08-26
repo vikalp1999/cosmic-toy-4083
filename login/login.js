@@ -1,4 +1,5 @@
 let data=JSON.parse(localStorage.getItem("signupdataTwink"))||[];
+console.log(data)
 class User{
   constructor(){
 

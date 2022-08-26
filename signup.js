@@ -55,9 +55,9 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-let data=JSON.parse(localStorage.getItem("signupdataTwink"))||[]; 
-console.log(data)
-class User{
+let signuparr=JSON.parse(localStorage.getItem("signupdataTwink"))||[]; 
+console.log(signuparr)
+class signupUser{
     constructor(){
     }
     signup(username,password,email,image){
@@ -87,7 +87,7 @@ let emailSignup=()=>{
     if(password!==con_password){
         alert("Plz Fill The Same Password ")
     }
-    let user=new User();
+    let user=new signupUser();
     user.signup(username,password,email,image)
 
 }
