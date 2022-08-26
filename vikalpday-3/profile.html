@@ -10,19 +10,19 @@
     #profile_container{
         width: 980px;
         height: 485px;
-        border: 1px solid black;
+        border: 0px solid black;
         margin: auto;
         display: flex;
     }
     #profile_details{
         width: 200px;
         height: 485px;
-        border: 1px solid black;
+        border: 0px solid black;
         }
     #profile_pic{
      width: 200px;
      height: 200px;
-     border: 1px solid red;
+     border: 0px solid red;
      border-radius: 50%;
     }
     #profile_pic>img{
@@ -39,11 +39,11 @@
     }
     #summary{
         height: 40px;
-        border: 1px solid gray;
+        border: 0px solid gray;
         background-color: rgb(221,221,221);
     }
     #email_logs{
-        border: 1px solid red;
+        border: 0px solid red;
       height: 130px;
       display: grid;
       grid-template-rows: repeat(4,1fr);  
@@ -55,7 +55,7 @@
     #changeProfile{
         height: 24px;
         text-align: center;
-        border: 1px solid blue;
+        border: 1px solid gray;
         margin-top: 15px;
         padding: 5px;
     }
@@ -64,11 +64,11 @@
     }
     #Side_container{
         width: 760px;
-        height: 404px;
+        height: 430px;
          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;;
         margin-left: 10px;
         display: grid;
-        grid-template-rows: 40px 20px 80px 160px;
+        grid-template-rows: 40px 20px 80px 160px 60px
     }
     #Side_container>div{
         border: 0px solid blue;
@@ -81,6 +81,9 @@
     border:0px solid purple;
     text-align: center;
     background-color: rgb(238,238,238);
+    }
+    #sideBaricon>div:hover{
+        background-color: rgb(221,221,221);
     }
     .icon_div{
         border: 0px solid black;
@@ -106,20 +109,34 @@
     #sidebar_bottom>div{
         border:0px solid black;
     }
+   
     #Workout_details{
         display: grid;
         grid-template-columns: repeat(2,1fr);  
     }
     #Workout_details>div{
-        border: 1px solid green;
+        border: 0px solid green;
     }
     #workoutDay{
         display: grid;
         grid-template-rows: repeat(3,1fr);
     }
+   
     #workoutDay>div{
-        border: 1px solid blue;
+        border: 0px solid blue;
         text-align: center;
+    }
+    #workoutDay>div:hover{
+        background-color: rgb(173,228,246) 
+    }
+    #about{
+        width: 236px;
+        border: 0px solid black;
+        margin-left: 500px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        background-color:rgb(221,221,221) ;
     }
    
 </style>
@@ -127,7 +144,7 @@
     <div id="profile_container">
         <div id="profile_details">
             <div id="profile_pic">
-                <img src="	https://kcdn.twiikapp.com/images/no_image.png" alt="">
+                <img id="profileImg" src="	https://kcdn.twiikapp.com/images/no_image.png" alt="">
             </div>
             <div id="email_details">
                 <span id="email_local">vikalp</span>
@@ -198,6 +215,9 @@
                     <div>Common activities</div>
                 </div>
             </div>
+            <div id="about">
+                About <span id="aboutEmail"></span>
+            </div>
         </div>
     </div>
 </body>
@@ -207,8 +227,12 @@
     console.log(loginData)
     let {email}=loginData;
     let {username}=loginData;
+    let {image} =loginData;
+    console.log(image)
     console.log(username)
     document.getElementById("sidebar_email").innerText=email;
     document.getElementById("sidebar_name").innerText=username;
     document.getElementById("email_local").innerText=email;
+    document.getElementById("aboutEmail").innerText=email;
+
 </script>
