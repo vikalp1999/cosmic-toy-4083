@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cosmic-toy-4083/monis_day-04/groupspage/createnew/style/creat.css">
+</head>
+
+<body>
+    <nav>
+        <!-- inport navbar from components (navbar.js) -->
+    </nav>
+    <div id="main">
+
+        <h1>Create Group</h1>
+        <p>Here you can create new groups. You will automatically be the administrator for the group.</p>
+        <div id="div1">
+            <label for="">Name</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name">
+            <br>
+            <br>
+            
+            <label for="">Description</label> &nbsp;
+            <input type="text" id="Description" style="width: 55%; height: 35px;">
+            <br>
+            <br>
+            
+            <label for="">Group image</label>
+            <input type="text" id="image">
+            <br>
+            <br>
+            
+            <label for="">Category</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="" id="Category">
+                <option value="Weight Lifting">Weight Lifting</option>
+                <option value="Cardio">Cardio</option>
+                <option value="Cardio Gym">Cardio Gym</option>
+                <option value="Other sports">Other sports</option>
+                <option value="Nutritions">Nutritions</option>
+            </select>
+            <br>
+            <br>
+            
+            <label for="">Language</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="" id="lang">
+                <option value="eng">ENGLISH</option>
+                <option value="dan">DANSK</option>
+                <option value="hin">HINDI</option>
+                <option value="it">ITALIANO</option>
+                <option value="ur">URDU</option>
+            </select>
+
+
+
+
+
+
+        </div>
+        <div id="div2">
+            <div style=" margin-right: 25px; display: flex; text-align: center; align-items: center;" ><p style=" width: 100%; "> Open or closed Gropus</p></div>
+            <div>
+                <input type="checkbox" id="open" checked><b> Open </b>  <br> Everyone can join the group. Is visible in search results. <br> <br>
+            
+            <input type="checkbox"  id="Limited"><b>Limited </b><br> Requires application or invitation to become member. Is visible in search results <br> <br>
+            <input type="checkbox" id="Closed"><b>Closed </b><br> Requires application or invitation to become member. <b>Isn't visible</b> in search results
+
+            </div>
+        </div>
+        <button id="savebtn"> SAVE</button>
+        <button>CANCEL</button>
+
+    </div>
+
+</body>
+
+</html> <script type="module" src="/cosmic-toy-4083/monis_day-04/groupspage/createnew/scripts/creat.js"></script>

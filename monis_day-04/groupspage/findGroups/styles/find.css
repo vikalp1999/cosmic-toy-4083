@@ -1,0 +1,18 @@
+nav {
+            
+    background-color: rgb(253, 240, 240);
+    padding-top:7px; 
+    padding-bottom: 7px; 
+padding-left: 22%;
+
+}
+#navbara{
+    color: #3bc6db;
+    margin: 0px 10px;
+    text-decoration: none;
+   
+    
+}
+#navbara:hover{
+    color: black;
+}
