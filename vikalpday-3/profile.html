@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cosmic-toy-4083/vikalpday-3/samnav.css">
+   
     <title>Document</title>
 </head>
 <style>
@@ -138,9 +140,117 @@
         justify-content: space-around;
         background-color:rgb(221,221,221) ;
     }
+    /* footer css start */
+       /* footer section */
+       #footer{
+            /* position: absolute;
+            left: 0px;
+            bottom: 0px; */
+            background: #121451;
+            height: auto;
+            width: 100%;
+            display: flex;
+            
+        }
+       
+       #footerR{
+        /* border: 1px solid red; */
+        width: auto;
+        max-width: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        margin-left: 50px;
+       }
+       #footerL{
+        /* border: 1px solid yellow; */
+        vertical-align: middle;
+        padding: 80px;
+        margin-left: 250px;
+       }
+       #footerL>a>img{
+        height: 50px;
+        padding: 10px;
+        
+       }
+       #footerR>p{
+          color: #BBBBBB;
+       }
+       #footerR>a{
+        text-decoration: none;
+        color: white;
+       }
+       #footerR>img{
+        width: 200px;
+       }
+      /* footer css end */
+      #nanditanav{
+        margin-top: 20px;
+      }
    
 </style>
 <body>
+    <!-- navmain html start -->
+    <div>
+        <div class="background ">
+            <nav id="inav">
+                
+                <img src="https://kcdn.twiikapp.com/images/logo.png"/>
+            
+                <p><a href="" >Exercise log</a></p>
+                <p><a href="" >Results</a></p>
+                <p><a href="">Challenges</a></p>
+                <p><a href="">Friends</a></p>
+                <p><a href="">Groups</a></p>
+                <div id="spre"><p>
+                    <!-- <a href="">email</a>
+                        <br> -->
+                    <a href="">My accounts</a>
+                </p></div>
+               
+                </span>
+               
+                <div id="div_acc_img" >
+    
+                    <div class="child">
+    
+                        <a  href="">
+                            <img  src="https://kcdn.twiikapp.com/images/no_image.png" alt="No_image">
+                        </a>
+                    </div>
+    
+                    <div class="child">
+    
+                        <a  href="">
+                            <img  src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat-by-vexels.png" alt="No_image">
+                        </a>
+                    </div>
+    
+                    <div class="child3">
+    
+                        <a  href="">
+                            <img  src="https://tse1.mm.bing.net/th?id=OIP.vaOEu9QOsxy1mgSPwwipmQAAAA&pid=Api&P=0" alt="No_image">
+                        </a>
+                    </div>
+                    
+                  
+    
+                    <!-- <a  href="">
+                        <img  src="	" alt="No_image">
+                    </a>
+    
+                    <a  href="">
+                        <img  src="" alt="No_image">
+                    </a> -->
+                </div>
+    
+                
+            </nav>
+        </div>
+    </div>
+    <!-- navmain html end -->
+    <!-- nandita html star  -->
+   
     <div id="profile_container">
         <div id="profile_details">
             <div id="profile_pic">
@@ -220,6 +330,21 @@
             </div>
         </div>
     </div>
+    <div id="footer">
+        <div id="footerR">
+            <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
+            <p>All rights reserved © 2002 - 2022</p>
+            <p>Developed by Wellnesstech Labs International AB</p>
+            <a href=""><p>Contact Us - Terms & Condition</p></a>
+        </div>
+        <div id="footerL">
+            <a href="https://www.facebook.com/twiikme/"><img src="https://kcdn.twiikapp.com/images/icon_facebook.png" alt="Icon_facebook"></a>
+            <a href="https://www.instagram.com/twiik.me/"><img src="https://kcdn.twiikapp.com/images/icon_instagram.png" alt="Icon_instagram"></a>
+            <a href="https://www.linkedin.com/company/twiik/"><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png" alt="Icon_linkedin"></a>
+            <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/icon_apple.png" alt="Icon_apple"></a>
+            <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
+        </div>
+    </div>
 </body>
 </html>
 <script>
@@ -234,5 +359,6 @@
     document.getElementById("sidebar_name").innerText=username;
     document.getElementById("email_local").innerText=email;
     document.getElementById("aboutEmail").innerText=email;
+    document.getElementById("profileImg").src=image
 
 </script>
