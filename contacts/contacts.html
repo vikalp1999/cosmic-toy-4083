@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contacts.css">
     <link rel="stylesheet" href="/login/style.css">
-<<<<<<< HEAD
-
-=======
->>>>>>> 0a7f902b819d080a8b4baf1d999009ca1ed3f636
     <title>Contacts</title>
-    </head>
+    
 <link rel="stylesheet" type="text/css" href="https://www.gstatic.com/recaptcha/releases/3TZgZIog-UsaFDv31vC4L9R_/styles__ltr.css">        
         
     </style>
@@ -165,3 +161,35 @@
 </body>
 </html>
 <script src="contacts.js"></script>
+<script>
+    function changeBg(){
+    var navbar = document.getElementById('snav')
+    var scrollValue = window.scrollY;
+    // console.log(scrollValue);
+
+    if(scrollValue <150 ){
+        navbar.classList.remove('bgColor')
+    }else{
+        navbar.classList.add('bgColor');
+    }
+}
+
+window.addEventListener('scroll',changeBg)
+</script>
+<script>
+    let content = document.querySelector("#simpleModal");
+    let openBtn = document.querySelector("#ModalBtn");
+    let closeBtn = document.querySelector(".closeBtn");
+  
+    openBtn.addEventListener("click", openModal);
+    closeBtn.addEventListener("click", closeModal);
+  
+    function openModal() {
+      console.log("clicked");
+      content.style.display = "block";
+    }
+    function closeModal() {
+      content.style.display = "none";
+    }
+  </script>
+  <script src="./login/login.js"></script>
