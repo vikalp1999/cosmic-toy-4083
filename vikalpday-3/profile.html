@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #profile_container{
+        width: 980px;
+        height: 485px;
+        border: 0px solid black;
+        margin: auto;
+        display: flex;
+    }
+    #profile_details{
+        width: 200px;
+        height: 485px;
+        border: 0px solid black;
+        }
+    #profile_pic{
+     width: 200px;
+     height: 200px;
+     border: 0px solid red;
+     border-radius: 50%;
+    }
+    #profile_pic>img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    #email_details{
+        height: 45px;
+        border: 1px solid blue;
+        margin-top: 5px;
+        display: grid;
+        background-color: rgb(18,20,81);
+        color: white;
+    }
+    #summary{
+        height: 40px;
+        border: 0px solid gray;
+        background-color: rgb(221,221,221);
+    }
+    #email_logs{
+        border: 0px solid red;
+      height: 130px;
+      display: grid;
+      grid-template-rows: repeat(4,1fr);  
+    }
+    #email_logs>div{
+        border: 0px solid green;
+        color: rgb(173,228,246);
+    }
+    #changeProfile{
+        height: 24px;
+        text-align: center;
+        border: 1px solid gray;
+        margin-top: 15px;
+        padding: 5px;
+    }
+    #email_logs>div:hover{
+        background-color: rgb(221,221,221);
+    }
+    #Side_container{
+        width: 760px;
+        height: 430px;
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;;
+        margin-left: 10px;
+        display: grid;
+        grid-template-rows: 40px 20px 80px 160px 60px
+    }
+    #Side_container>div{
+        border: 0px solid blue;
+    }
+    #sideBaricon{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    #sideBaricon>div{
+    border:0px solid purple;
+    text-align: center;
+    background-color: rgb(238,238,238);
+    }
+    #sideBaricon>div:hover{
+        background-color: rgb(221,221,221);
+    }
+    .icon_div{
+        border: 0px solid black;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #sideBaricon>div:hover{
+        background-color: rgb(173,228,246);
+    }
+    .icon_div>img{
+        width: 60%;
+    }
+    #name_side_bar{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    #sidebar_bottom{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #sidebar_bottom>div{
+        border:0px solid black;
+    }
+   
+    #Workout_details{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);  
+    }
+    #Workout_details>div{
+        border: 0px solid green;
+    }
+    #workoutDay{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+    }
+   
+    #workoutDay>div{
+        border: 0px solid blue;
+        text-align: center;
+    }
+    #workoutDay>div:hover{
+        background-color: rgb(173,228,246) 
+    }
+    #about{
+        width: 236px;
+        border: 0px solid black;
+        margin-left: 500px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        background-color:rgb(221,221,221) ;
+    }
+   
+</style>
+<body>
+    <div id="profile_container">
+        <div id="profile_details">
+            <div id="profile_pic">
+                <img id="profileImg" src="	https://kcdn.twiikapp.com/images/no_image.png" alt="">
+            </div>
+            <div id="email_details">
+                <span id="email_local">vikalp</span>
+            </div>
+            <div id="summary">Summary</div>
+            <div id="email_logs">
+                <div>Exercise Log</div>
+                <div>Blog</div>
+                <div>Challenges</div>
+                <div>Competitions</div>
+            </div>
+            <div id="changeProfile">Change profile</div>
+        </div>
+        <div id="Side_container">
+            <div id="email_side_bar">
+                <h3 id="sidebar_email"></h3>
+            </div>
+            <div id="name_side_bar">
+                <p id="sidebar_name"></p>
+            </div>
+            <div id="sideBaricon">
+                <div>Workouts
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/workouts.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Challgers
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/medal.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Competitions
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/contest.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Friends
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/friend.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Groups
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/group.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Equipments
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/group.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar_bottom">
+                <div>
+                    Tained time per week
+                </div>
+                <div id="Workout_details">
+                    <div id="workoutDay">
+                        <div>Last 30 days</div>
+                        <div>Workouts</div>
+                        <div>Km</div>
+                    </div>
+                    <div>Common activities</div>
+                </div>
+            </div>
+            <div id="about">
+                About <span id="aboutEmail"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let loginData=JSON.parse(localStorage.getItem("logindata"))
+    console.log(loginData)
+    let {email}=loginData;
+    let {username}=loginData;
+    let {image} =loginData;
+    console.log(image)
+    console.log(username)
+    document.getElementById("sidebar_email").innerText=email;
+    document.getElementById("sidebar_name").innerText=username;
+    document.getElementById("email_local").innerText=email;
+    document.getElementById("aboutEmail").innerText=email;
+
+</script>
