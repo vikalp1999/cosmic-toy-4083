@@ -1,0 +1,36 @@
+#main{
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    border-left:1px solid rgb(163, 159, 159) ;
+    border-right:1px solid rgb(163, 159, 159) ;
+    font-family:Lato, Arial, Helvetica, sans-serif;
+    
+}
+
+nav{
+   
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    /* border: 2px solid; */
+    padding: 0% 17%;
+    background-color: #eef0ed;
+  
+}
+a{
+color:#3BC6DB ;
+text-decoration: none;
+}
+a:hover{
+
+  color:black;
+  
+
+}
+
+label{
+    font-size: 13px;
+    font-weight: 600;
+  color: rgb(41, 40, 40);
+}
