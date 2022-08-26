@@ -5,9 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./CSS Exercise log/calender.css">
 </head>
+
 <body>
-    <h1>Welcome to my Calender page</h1>
-    <img src="https://pbs.twimg.com/media/FDCuEz5VUAgDUAI.jpg" alt="">
+
+    <div id="box">
+        <div id="nav">
+            <a href="calender.html">Show Calender</a>
+            <a href="thing.html">My Things</a>
+            <a href="rout.html">Routines</a>
+            <a href="track.html">Tracks</a>
+            <a href="equip.html">Equipment</a>
+            <a href="import.html">Import Training</a>
+        </div>
+    </div>
+
+    <div id="ncContainer">
+        <div id="ncHead">My Training Diary</div>
+
+        <div id="ncDetails">
+            <div>August 2022</div>
+            <div id="ncTraining">
+                <div>Trained this month</div>
+                <div>
+                    <p>Workout: </p>
+                    <p>Time:</p>
+                    <p>Average:</p>
+                </div>
+            </div>
+            <div>
+                <button class="ncAddBtn">ADD TO YOUR CALENDER</button>
+            </div>
+        </div>
+
+        <div id="ncCalender">
+        <!-- Calender Append -->
+        </div>
+
+        <div id="ncMonthChange">
+            <div id="ncPre"></div>
+            <div id="ncCurr">
+                <p>Select another month </p>
+                <select name="Year" id="ncYear">
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+                <select name="Month" id="ncMonth">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <button id="ncShow">SHOW</button>
+            </div>
+            <div id="ncPost"></div>
+        </div>
+
+        <div id="ncAnchor">
+            <a href=""> <p>Show current month </p></a>
+            <div>|</div>
+            <a href=""> <p>Search your diary </p></a>
+            <div>|</div>
+            <a href=""><p>Show year </p></a>
+        </div>
+
+        <div id="ncModules">
+            <div>Modules</div>
+            <button class="ncAddBtn">ADD MODULE</button>
+        </div>
+
+        <div id="ncTopList">
+            <h3>My Top List</h3>
+            <div>
+                <div>Top 5 on my Top List</div>
+                <select name="WorkOut time" id="">
+                    <option value="Work Out Time">Work Out Time</option>
+                    <option value="WorkOuts">WorkOuts</option>
+                    <option value="Distance">Distance</option>
+                    <option value="Steps">Steps</option>
+                    <option value="Name">Name</option>
+                </select>
+            </div>
+            <div>
+                <img src="" alt="">
+                <a href="">Nandita Singh</a>
+            </div>
+            <div>
+                <a href="">Show full list</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
+<script src="./SCRIPT Exercise Log/calender.js"></script>
