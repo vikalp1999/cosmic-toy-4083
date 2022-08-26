@@ -15,7 +15,7 @@
         padding: 0px;
     }
     .background{
-        height: 60px;
+        height: 42px;
         width:100%;
         display: flex;
         align-items: center;
@@ -25,6 +25,7 @@
     } 
     #inav{
     width: 100%;
+    /* height: 50px; */
     position: fixed;
     background-color:transparent; 
     font: 12px lato, Arial, Helvetica, sans-serif;
@@ -43,7 +44,7 @@
         width:100px;
         padding-left: 280px;
         padding-right: 80px;
-        padding-bottom: 15px;
+        padding-bottom: 0px;
     }
     #inav{
         display:flex;
@@ -56,6 +57,7 @@
         display:flex;
         align-items: center;
         font:10px;
+        padding-top:20px;
       
     }
     p{
@@ -64,6 +66,7 @@
         
     }
     #icons{
+        gap:5px;
         display:flex;
         height: 35px;
         width:40px;   
@@ -82,7 +85,8 @@
         color:whitesmoke;
     }
     #spre{
-        border: 1px solid yellow;
+        padding-top: 20px;
+        /* border: 1px solid yellow; */
     }
     #img_acc{
         width: 5%;
@@ -96,22 +100,42 @@
         display: flex;
         width: 100px;
         height: 50px;
+        margin-left: 40px;
         /* align-items: center; */
+         gap:0px; 
     }
-   
+   .child1{
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+   }
    .child{
     /* border: 1px solid white; */
     width: 33%;
     display: flex;
-    padding: 6px;
+    padding: 2px;
     justify-content: center;
     align-items: center;
+    
    }
    .child > a > img{
     width: 80%;
-    height: 80%;
+    height: 70%;
+
    }
-   
+   .child3{
+    width: 33%;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .child3> a > img{
+    width: 80%;
+    height: 70%;
+    border-radius: 50%;
+   }
     
 </style>
 <body>
@@ -126,8 +150,8 @@
             <p><a href="">Friends</a></p>
             <p><a href="">Groups</a></p>
             <div id="spre"><p>
-                Logged in as <a href="">email</a>
-                    <br>
+                <!-- <a href="">email</a>
+                    <br> -->
                 <a href="">My accounts</a>
             </p></div>
            
@@ -145,14 +169,14 @@
                 <div class="child">
 
                     <a  href="">
-                        <img  src="https://kcdn.twiikapp.com/images/messages_off.png" alt="No_image">
+                        <img  src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat-by-vexels.png" alt="No_image">
                     </a>
                 </div>
 
-                <div class="child">
+                <div class="child3">
 
                     <a  href="">
-                        <img  src="	https://kcdn.twiikapp.com/images/notifications_off.png" alt="No_image">
+                        <img  src="https://tse1.mm.bing.net/th?id=OIP.vaOEu9QOsxy1mgSPwwipmQAAAA&pid=Api&P=0" alt="No_image">
                     </a>
                 </div>
                 
