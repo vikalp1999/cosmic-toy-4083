@@ -192,22 +192,23 @@
 
 
 
-*{
+/* *{
     margin: 0px;
     padding: 0px;
-}
+} */
 .background{
-    height: 60px;
+    height: 53px;
     width:100%;
     display: flex;
     align-items: center;
     /* padding-bottom: 20px; */
     padding: 10px 0px;
-    background-color:#041b5c ;
+    background-color:#0e0442 ;
 } 
 #inav{
 width: 100%;
-position: fixed;
+/* height: 50px; */
+position: relative;
 background-color:transparent; 
 font: 12px lato, Arial, Helvetica, sans-serif;
 color: white;
@@ -220,12 +221,13 @@ transition: all 0.2s ease-in-out;
 
 }
 #inav > img{
-   
     height:35px;
     width:100px;
-    padding-left: 280px;
-    padding-right: 80px;
-    padding-bottom: 15px;
+    margin-left: 180px;
+    margin-right: 60px;
+     /* padding-left: 280px; */
+    /* padding-right: 80px; */
+    /* padding-bottom: 0px;  */
 }
 #inav{
     display:flex;
@@ -234,18 +236,19 @@ transition: all 0.2s ease-in-out;
     align-items: center;
 
 }
-#inav>p{
+#inav>h3{
     display:flex;
     align-items: center;
     font:10px;
+    /* padding-top:20px; */
   
 }
-#inav>p{
-    font-size: 18px;
+#ncAcc{
     text-decoration: none;
-    
+    margin-left: 200px;
 }
 #icons{
+    gap:5px;
     display:flex;
     height: 35px;
     width:40px;   
@@ -257,14 +260,12 @@ transition: all 0.2s ease-in-out;
     color:grey;
     text-decoration: none;
 }
-#inav>p:hover{
-   color:whitesmoke;
-}
 #inav a:hover{
     color:whitesmoke;
 }
 #spre{
-    border: 1px solid yellow;
+    padding-top: 20px;
+    /* border: 1px solid yellow; */
 }
 #img_acc{
     width: 5%;
@@ -278,18 +279,39 @@ transition: all 0.2s ease-in-out;
     display: flex;
     width: 100px;
     height: 50px;
+    margin-left: 40px;
     /* align-items: center; */
+     gap:0px; 
 }
-
+.child1{
+height:12px;
+width:12px;
+border-radius: 50%;
+}
 .child{
 /* border: 1px solid white; */
 width: 33%;
 display: flex;
-padding: 6px;
+padding: 2px;
 justify-content: center;
 align-items: center;
+
 }
 .child > a > img{
 width: 80%;
-height: 80%;
+height: 70%;
+
+}
+.child3{
+width: 33%;
+display: flex;
+padding: 2px;
+justify-content: center;
+align-items: center;
+
+}
+.child3> a > img{
+width: 80%;
+height: 70%;
+border-radius: 50%;
 }
