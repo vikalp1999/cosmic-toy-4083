@@ -55,7 +55,8 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-let data=JSON.parse(localStorage.getItem("shapeLinksignupData"))||[]; 
+let data=JSON.parse(localStorage.getItem("signupdataTwink"))||[]; 
+console.log(data)
 class User{
     constructor(){
     }
@@ -68,7 +69,7 @@ class User{
         if(username==""||email==""||image==""||password==""){
           return 
         }
-        localStorage.setItem("shapeLinksignupData",JSON.stringify(data))
+        localStorage.setItem("signupdataTwink",JSON.stringify(data))
         alert("SUCESSFULL SIGN-UP")
     }
    

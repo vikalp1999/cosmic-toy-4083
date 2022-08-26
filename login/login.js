@@ -1,25 +1,24 @@
-let data=JSON.parse(localStorage.getItem("shapeLinksignupData"))||[];
+let data=JSON.parse(localStorage.getItem("signupdataTwink"))||[];
 class User{
   constructor(){
 
   }
-  login(loginusername,loginpassword){
+  login(loginemail,loginpassword){
+    console.log(data)
     data.forEach(function(el){
-      if(el.username==loginusername&&el.password==loginpassword){
+      if(el.email==loginemail&&el.password==loginpassword){
         alert("sucessfull login");
         console.log(el)
         localStorage.setItem("logindata",JSON.stringify(el))
-      }else{
-        alert("Details are not correct!")
       }
     })
   }
 }
 
 
-let login=()=>{
-  let loginusername=document.getElementById("loginUsername").value;
+let login1=()=>{
+  let loginemail=document.getElementById("loginUsername").value;
   let loginpassword=document.getElementById("loginPassword").value;
   let user=new User();
-  user.login(loginusername,loginpassword) 
+  user.login(loginemail,loginpassword) 
 }
