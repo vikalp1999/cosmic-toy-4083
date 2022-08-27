@@ -6,7 +6,7 @@ let nav=document.querySelector("mnav")
 let creatnewcom=document.getElementById("compet").addEventListener("click",compet)
 function compet(){
     console.log("yes")
-    window.location.href="newcom.html"
+    window.location.href="/monis_day_03/compititionPage/html/newcom.html"
     return;
 }
 
