@@ -43,12 +43,18 @@
     font-size: 35px;
     margin-bottom: 10px;
 }
+#neCreate{
+    text-align: center;
+}
 #neCreate>p:nth-child(1){
     font-size: 28px;
     margin-bottom: 7px;
+    color: rgb(70, 70, 70);
 }
 #neCreate>p:nth-child(2){
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: rgb(94, 93, 93);
 }
 #neCreate>input{
     margin-bottom: 15px;
@@ -60,6 +66,60 @@
     height: 30px;
     width: 300px;
 }
+#neCreate>button{
+   padding: 10px 15px; 
+   margin-left: 10px;
+   background-color: white;
+}
+#neSave{
+    border: 2px solid rgb(125, 194, 108);
+}
+#neSave:hover{
+    border: 2px solid rgb(33, 150, 4);
+}
+#neCancel{
+    border: 2px solid grey;
+}
+#neCancel:hover{
+    border: 2px solid rgb(20, 20, 20);
+}
+#neCreate>#neCheck{
+    width: 15px;
+    margin-top: 10px;
+}
+#nePrefer{
+    color: rgb(44, 43, 43);
+    margin-top: 20px;
+}
+
+#neUploadImage>h4{
+    margin-bottom: 10px;
+}
+#neUploadImage>p{
+    margin-bottom: 10px;
+}
+#neUploadImage>div{
+    margin-bottom: 20px;
+}
+#neUploadbtn1{
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    background-color: white;
+    border: 2px solid gray;
+}
+#neUploadbtn1:hover{
+    border: 2px solid black;
+}
+#neUploadbtn2{
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    background-color: white;
+    border: 2px solid gray;
+}
+#neUploadbtn2:hover{
+    border: 2px solid black;
+}
+
 
 /* ---------------------------Blue Navbar--------------------------- */
 
