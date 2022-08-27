@@ -1,7 +1,7 @@
  import { navbar } from './components/navbar.js';
 
  let commom_navbar=document.getElementById("nav-bar")
-commom_navbar.innerHTML=navbar()
+// commom_navbar.innerHTML=navbar()
 
 
 
