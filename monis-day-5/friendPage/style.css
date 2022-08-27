@@ -1,0 +1,97 @@
+#nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  /* border: 2px solid; */
+  padding-left:  17%;
+  padding-top:  5px;
+  padding-bottom:  5px;
+  background-color: #eef0ed;
+}
+a{
+  color:#3BC6DB ;
+  text-decoration: none;
+}
+a:hover{
+  
+    color:black;
+    
+  
+}
+#friends-bar {
+  display: flex;
+  /* height: 5%; */
+  margin: 3px 0px 0px;
+/* padding: 5%; */
+  justify-content: space-between;
+  /* border: 1px solid; */
+}
+#findnew_friends_btn {
+  /* background-color: white; */
+  
+  border-radius: 4px;
+  
+  
+  font-size: 14px;
+}
+#Friends_h1 {
+  margin: -4px 0px 15px;
+}
+.m_navbar {
+  margin: 3px;
+}
+
+#mcontainer {
+  /* border: 2px solid rgb(0, 17, 255); */
+  width: 70%;
+  margin: auto;
+  height: 600px;
+  color: #555555;
+}
+#mparent1 {
+  width: 100%;
+  margin-top: 2%;
+  /* border: 5px solid rgb(219, 63, 24); */
+  /* height: 5%; */
+  /* margin: auto; */
+  /* justify-content: space-between; */
+  /* padding: 5%; */
+}
+#mparent2 {
+  margin-top: -1%;
+  /* border: 5px solid rgb(51, 222, 12); */
+  display: grid;
+  grid-template-columns: 70% 38%;
+  gap: 1%;
+  justify-content: space-between;
+}
+
+#msorting {
+  display: flex;
+  background-color:#d5d7d2;
+  justify-content: space-between;
+  padding:0% 3%;
+  padding-bottom: 2%;
+
+  font-size: 16px;
+}
+
+
+#m_profile-image {
+  border-radius: 50%;
+}
+
+
+
+#mmycompetitons > #mcompet > table {
+  width: 100%;
+  /* border: 2px solid red; */
+}
+h1,h3,h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+p{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
