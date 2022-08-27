@@ -7,6 +7,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS Exercise log/import.css">
 </head>
+<style>
+    #nimain{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+.niblue{
+    width: 180px;
+    padding: 8px 0px 8px 15px;
+    color: white;
+    background-color: rgb(13, 13, 109);
+    margin-top: 20px;
+    font-size: 15px;
+}
+.nibar{
+    width: 180px;
+    color:rgb(74, 173, 230);
+    background-color:rgb(240, 240, 240);
+    margin-top: 2px;
+    padding: 8px 0px 8px 15px;
+    font-size: 15px;
+}
+.nibar:hover{
+    color: black;
+    background-color: rgb(219, 217, 217);
+}
+#nicontent{
+    margin-top: 50px;
+}
+#nicontent>div{
+    font-size: 30px;
+    color: rgb(114, 109, 109);
+}
+#nicontent>p{
+    font-size: 13px;
+}
+</style>
 <body>
     <div class="background ">
         <nav id="inav">
@@ -54,7 +93,30 @@
             <a href="/import.html">Import Training</a>
         </div>
     </div>
-    <h1>Welcome to my Import page</h1>
+    <div>
+        <div id="nimain">
+
+            <div id="niside">
+                <div class="niblue">CATEGORIES</div>
+                <div class="nibar">Start page</div>
+                <div class="nibar">Runkeeper</div>
+                <div class="nibar">Garmin</div>
+                <div class="nibar">Suunto</div>
+                <div class="nibar">Sports</div>
+                <div class="nibar">Withings</div>
+                 <div class="nibar">My Routines</div>
+                 <div class="nibar">Fitbit</div>
+                <div class="nibar">Gyms</div>
+             </div>
+        
+             <div id="nicontent">
+                <div>Import GPS-data</div>
+                <p>Here you can import workouts to your training diary. Connect to one or more services below.</p>
+             </div>
+        
+        </div>
+    </div>
+    <!-- <h1>Welcome to my Import page</h1> -->
 
     <div id="footer">
         <div id="footerR">
