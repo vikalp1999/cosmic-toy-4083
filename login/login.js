@@ -11,6 +11,7 @@ class User{
         alert("sucessfull login");
         console.log(el)
         localStorage.setItem("logindata",JSON.stringify(el))
+        window.location.href='calender.html'
       }
     })
   }
